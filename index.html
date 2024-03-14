@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
+    <title>Portifolio - Mileny Velho</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <xmp></Mileny Velho></xmp>
+            </h1>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
+                <li><a href="#informacao">Sobre Mim</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacao">
+            <div id="sobre">
+                <h1>Mileny Velho</h1>
+                <h2>Front-end Developer / Designer</h2>
+                <h3>Front-end developer e designer em busca de projetos e desafios. <br>Em constante aprendizado!</h3>
+            </div>
+            <div id="codigo">
+                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+<span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+        if (element.count &lt;= element_array.length) {
+            setTimeout(() =&gt; {
+                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        } else if (element.count &gt;= element_array.length) {
+            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        }
+    }
+    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+}</pre></span>
+            </div>
+        </section>
+
+        
+        <section id="historia">
+           
+            <img src="./img/Logo.png" alt="Retangulo">
+            <span>
+               
+                Explorar as últimas tendências do mundo digital, Com olhar atento aos detalhes e uma mente curiosa. Estou constantemente buscando aprender novas técnicas e ferramentas para aprimorar minhas habilidades e ampliar meu conhecimento.
+                 <br>
+                Meu objetivo é criar interfaces modernas e funcionais que proporcionem uma experiência excepcional ao usuário. Acredito que o design centrado no usuário e a acessibilidade são fundamentais para o sucesso de qualquer projeto web, e estou comprometida em aplicar esses princípios.
+            </span>
+        </section>
+        
+        <section id="minhas-habilidades">
+
+            <h1 class="titulo">Minhas Habilidades</h1>
+            <div id="habilidades">
+                <div class="box">
+                    <div class="glass"></div>
+                    <div class="content">
+                        <h1>Habilidades</h1>
+                        <br>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="glass"></div>
+                    <div class="content">
+                        <h1>competencias</h1>
+                        <BR>
+                        <ul>
+                            <li>Gestão de tempo</li>
+                            <li>Comunicação</li>
+                            <li>Identidade visual</li>
+                            <li>Conhecimentos de Tipografia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="glass"></div>
+                    <div class="content">
+                        <h1>Hobbies</h1>
+                        <BR>
+                        <ul>
+                            <li>Projetos Pessoais</li>
+                            <li>BOOTCAMP</li>
+                            <li>workshops</li>
+                            <li>Festivais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <!-- <h1>Projetos</h1> -->
+            <!-- <div id="sites">
+                <img id="site1" src="img/Screenshot_1.png" alt="" width="1100px">
+                <img id="site2" src="img/Screenshot_2.png" alt="">
+            </div> -->
+            <a href="https://github.com/milenyv?tab=repositories" target="_blank"><button class="mais">VER PROJETOS</button></a>
+        </section>
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Mileny Velho></xmp></h1>
+            <h2>Se você gostou do meu trabalho <br> esses são meus contatos para conversar.</h2>
+        </div>
+        <div id="contatos">
+            <h1>Contatos</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="email"> <a href="milenyvelho@outlook.com"
+                        target="_blank">milenyvelho@outlook.com</a></li>
+                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/milenyv"
+                        target="_blank">Milenyv</a></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"><a
+                        href="https://www.linkedin.com/in/mileny-velho-dos-santos-1375031a8/" target="_blank">Mileny Velho</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
