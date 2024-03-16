@@ -20,7 +20,6 @@ html{
 
 body{
     background-color: #1B1A17;
-    font-family:  'Inconsolata', monospace;
 }
 .box{
     position: relative;
@@ -38,6 +37,19 @@ body{
     border-radius: 18px;
     border: 3px solid black;
 }
+
+.box2{
+    background: linear-gradient(#111,#111) 
+    padding-box, linear-gradient(45deg,#09009f, #00ff95) border-box;
+    border-radius: 10rem;
+    border: 4px solid transparent;
+    font-size: 4rem;
+    color: #fff;
+    padding: 15px;
+
+}
+
+
 
 .sites{
     display: flex;
@@ -58,7 +70,7 @@ nav xmp{
     line-height: 39px;
     font-size: 32px;
     letter-spacing: 2px;
-    color: #FF8303;
+    color: rgb(13, 171, 105);
     margin-left: 42px;
 }
 
@@ -75,9 +87,6 @@ nav a{
     font-weight: 700;
 }
 
-nav a:hover{
-    color: #FF8303;
-}
 
 nav a#menu{
     display: none;
@@ -99,7 +108,7 @@ nav a#menu{
 
 #sobre h1{
     font-weight: 900;
-    color: #FF8303;
+    color: rgb(50, 198, 136);
     font-size: 45px;
     line-height: 60px;
     font-family: 'Times New Roman', Times, serif;
@@ -107,7 +116,7 @@ nav a#menu{
 
 #sobre h2{
     font-weight: 700;
-    color: #F0E3CA;
+    color: rgb(251, 226, 195);
     font-size: 36px;
     line-height: 42px;
 }
@@ -176,12 +185,14 @@ nav a#menu{
 }
 
 #minhas-habilidades h1.titulo{
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
-    color: #FF8303;
+    color: rgb(50, 198, 136);
     text-align: center;
     line-height: 34px;
     padding: 50px;
+    text-decoration: underline;
+
 }
 
 #habilidades{
@@ -233,17 +244,29 @@ nav a#menu{
     
 }
 
-#projetos h1{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 34px;
-    text-align: center;
-    color: #FF8303;
-    margin-bottom: 50px;
-}
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
 
 #projetos button.mais{
-    background-color: #ff8103;
+    background-color: rgb(50, 198, 136);
     border-style: none;
     padding: 20px 35px;
     border-radius: 10px;
@@ -273,7 +296,7 @@ footer{
     line-height: 39px;
     font-size: 26px;
     letter-spacing: 3px;
-    color: #FF8303;
+    color: rgb(50, 198, 136);
 }
 
 #msg h2{
@@ -295,7 +318,7 @@ footer{
     font-weight: 700;
     font-size: 35px;
     line-height: 34px;
-    color: #FF8303;
+    color: rgb(50, 198, 136);
 }
 
 #contatos ul{
@@ -317,7 +340,7 @@ footer{
     font-weight: 400;
     font-size: 22px;
     line-height: 25px;
-    color: #FF8303;
+    color: rgb(50, 198, 136);
 }
 
 #contatos a:hover{
@@ -435,10 +458,6 @@ footer{
         font-weight: 700;
     }
     
-    nav a:hover{
-        color: #FF8303;
-    }
-
     .menu.open{
         display: flex;
     }
